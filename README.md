@@ -8,7 +8,7 @@ With AI kits you can:
 * upload data, download the results using desktop or mobile device.
 * make your experiments reproducible.
 
-You can start by taking one of these kits and experimenting with it as a (free tier user)[https://neu.ro/] or by installing Neuro into your AWS, GCP or Azure cloud account or on-prem GPU rack.
+You can start by taking one of these kits and experimenting with it as a [free tier user](https://neu.ro/) or by installing Neuro into your AWS, GCP or Azure cloud account or on-prem GPU rack.
 
 ## What's Inside?
 
