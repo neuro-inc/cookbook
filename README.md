@@ -1,14 +1,14 @@
 # Welcome to AI Kits
 
-This is a curated collection of learning materials and ready-to-use examples and best practices available to you in the form of interactive environments running on [Neuro Platform](https://neu.ro).
+This is a curated collection of learning materials, ready-to-use examples and best practices available to you in the form of interactive environments running on [Neuro Platform](https://neu.ro).
 
 With AI kits you can:
-* run state of the art (SoTA) deep learning models for a variety of applied tasks.
-* interact with the results and extend the solution.
-* upload data, download the results using desktop or mobile device.
-* make your experiments reproducible.
+* Run state of the art (SoTA) deep learning models for a variety of applied tasks.
+* Interact with the results and extend the solution.
+* Upload data, download the results using desktop or mobile device.
+* Make your experiments reproducible.
 
-You can start by taking one of these kits and experimenting with it as a (free tier user)[https://neu.ro/] or by installing Neuro into your AWS, GCP or Azure cloud account or on-prem GPU rack.
+You can start by taking one of these kits and experimenting with it as a [free tier user](https://neu.ro/) or by installing Neuro into your AWS, GCP or Azure cloud account or on-prem GPU rack.
 
 ## What's Inside?
 
@@ -24,7 +24,7 @@ You can start by taking one of these kits and experimenting with it as a (free t
 
 ### Language
 
-* [A Code-First Introduction to Natural Language Processing](course-fast-ai-nlp) - everything you need to follow (the NLP from fast.ai)[https://www.fast.ai/2019/07/08/fastai-nlp/] including transfer learning for NLP. tips on working with languages other than English. attention and the transformer, text generation algorithms, Issues of bias and some steps towards addressing them.
+* [A Code-First Introduction to Natural Language Processing](course-fast-ai-nlp) - everything you need to follow [the NLP from fast.ai](https://www.fast.ai/2019/07/08/fastai-nlp/) including transfer learning for NLP, tips on working with languages other than English, attention and the transformer, text generation algorithms, issues of bias and some steps towards addressing them.
 
 * [Microsoft's NLP Notebooks](microsoft-nlp) - start building Natural Language Processing systems for the following scenarios: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity and more.
 
