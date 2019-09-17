@@ -24,7 +24,7 @@ You can start by taking one of these kits and experimenting with it as a [free t
 
 ### Language
 
-* [A Code-First Introduction to Natural Language Processing](course-fast-ai-nlp) - everything you need to follow (the NLP from fast.ai)[https://www.fast.ai/2019/07/08/fastai-nlp/] including transfer learning for NLP. tips on working with languages other than English. attention and the transformer, text generation algorithms, Issues of bias and some steps towards addressing them.
+* [A Code-First Introduction to Natural Language Processing](course-fast-ai-nlp) - everything you need to follow [the NLP from fast.ai](https://www.fast.ai/2019/07/08/fastai-nlp/) including transfer learning for NLP. tips on working with languages other than English. attention and the transformer, text generation algorithms, Issues of bias and some steps towards addressing them.
 
 * [Microsoft's NLP Notebooks](microsoft-nlp) - start building Natural Language Processing systems for the following scenarios: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity and more.
 
