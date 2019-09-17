@@ -47,7 +47,7 @@ git clone --recursive https://github.com/neuromation/ai-kits.git
 Make sure to use `--recursive` argument to get a full copy of repositories included in the AI Kits.
 
 
-### Installing Neuro CLI
+### Install Neuro CLI
 
 To work with AI Kits you need to install `neuro` CLI client.
 
@@ -60,4 +60,8 @@ neuro login
 
 Paste that in a macOS, Windows or Linux terminal prompt. This will automatically install Neuro CLI and initiate login flow.
 
-[See More...](https://neu.ro/installation)
+### Setup and Run AI Kit
+
+* Navigate to the kit of interest: `cd ai-kits/course-fast-ai-nlp`
+* Setup the environment: `make setup`
+* Run Jupyter notebook: `make jupyter`
