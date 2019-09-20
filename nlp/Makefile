@@ -55,7 +55,7 @@ setup: ### Setup remote environment
 	neuro cp $(REQUIREMENTS_PIP) $(REQUIREMENTS_PIP_STORAGE)
 	neuro exec --no-key-check $(SETUP_NAME) "bash -c 'export DEBIAN_FRONTEND=noninteractive && $(APT_COMMAND) update && cat $(REQUIREMENTS_APT_ENV) | xargs -I % $(APT_COMMAND) install --no-install-recommends % && $(APT_COMMAND) clean && $(APT_COMMAND) autoremove && rm -rf /var/lib/apt/lists/*'"
 	neuro exec --no-key-check $(SETUP_NAME) "bash -c '$(PIP_COMMAND) uninstall -y enum34 && $(PIP_COMMAND) install setuptools_scm==3.3.3 && $(PIP_COMMAND) install -r $(REQUIREMENTS_PIP_ENV) && echo installed pip requirements'"
-	neuro --network-timeout 9000 job save $(SETUP_NAME) $(CUSTOM_ENV_NAME)
+	neuro --network-timeout 90000 job save $(SETUP_NAME) $(CUSTOM_ENV_NAME)
 	neuro kill $(SETUP_NAME)
 
 ##### STORAGE #####

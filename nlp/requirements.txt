@@ -1,5 +1,4 @@
-setuptools_scm==3.3.3
-git+git://github.com/microsoft/nlp
+git+git@github.com:microsoft/nlp.git@master#egg=utils_nlp
 torchvision==0.2.2.post3
 torch==1.1.0
 tqdm==4.32.1
@@ -16,3 +15,4 @@ cached-property==1.5.1
 nteract-scrapbook[all]
 nltk==3.4.5
 pytorch-transformers==1.2.0
+mlflow==1.2.0
