@@ -26,7 +26,7 @@ JUPYTER_NAME?=jupyter-nlp
 TENSORBOARD_NAME?=tensorboard-nlp
 FILEBROWSER_NAME?=filebrowser-nlp
 
-BASE_ENV_NAME?=neuromation/base-2
+BASE_ENV_NAME?=neuromation/base
 CUSTOM_ENV_NAME?=image:neuromation-nlp
 
 APT_COMMAND?=apt-get -qq

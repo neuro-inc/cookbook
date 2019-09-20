@@ -1,4 +1,4 @@
-git+git@github.com:microsoft/nlp.git@master#egg=utils_nlp
+git+git://github.com/microsoft/nlp
 torchvision==0.2.2.post3
 torch==1.1.0
 tqdm==4.32.1
