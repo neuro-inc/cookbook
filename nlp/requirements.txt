@@ -16,3 +16,5 @@ nteract-scrapbook[all]
 nltk==3.4.5
 pytorch-transformers==1.2.0
 mlflow==1.2.0
+gensim==3.8.0
+spacy==2.1.8
