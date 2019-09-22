@@ -1,6 +1,6 @@
 # Object Detection
 
-End to end object detection pipeline for objects represented in [Common Objects in Context (COCO)](http://cocodataset.org) dataset. Allows to  evaluate performance on real life images and add new object classes.
+End to end object detection pipeline for objects represented in [Common Objects in Context (COCO)](http://cocodataset.org) dataset. Allows to  evaluate performance on real life images and add new object classes. Adding new classes in object recognition is computationally expensive and involves model fine-tuning to ensure it still performs well on old and new classes. Usually, it's a trade-off between cost of labeling new datasets (new objects in different environments and combinations), model training time (cost of GPU), and ML Engineering time spent on experimentation and development.   To make this example more interactive we are providing a reduced version of COCO dataset that contains only classes that represent retail items. This dataset is further reduced to 100 images to reduce re-training time and make this example more interactive.
 
 # Development Environment
 
@@ -20,19 +20,18 @@ This project is designed to run on [Neuro Platform](https://neu.ro), so you can 
 
 Follow the instructions below to setup the environment and start Jupyter development session backed by CPU or GPU.
 
-### Neuro Platform
+## Neuro Platform
 
 * Setup development environment `make setup`
 * Run Jupyter with GPU: `make jupyter`
-* TBD: Run Jupyter with CPU: `make jupyter-cpu`
 * Kill Jupyter: `make kill_jupyter`
 
 # Data
 
-### Uploading via Web UI
+## Uploading via Web UI
 
 From local machine run `make filebrowser` and open job's URL from your mobile device or desktop. Through a simple file explorer interface you can upload test images and perform file operations.
 
-### Uploading via CLI
+## Uploading via CLI
 
 From local machine run `make upload_data`. This will push local files stored in `./data` into `storage:detection-kit/data` mounted to your development environment's `/project/data`.

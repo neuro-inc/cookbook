@@ -26,9 +26,11 @@ JUPYTER_NAME?=jupyter
 TENSORBOARD_NAME?=tensorboard
 FILEBROWSER_NAME?=filebrowser
 
-BASE_ENV_NAME?=neuromation/base-2
-CUSTOM_ENV_NAME?=neuromation/base-2
+BASE_ENV_NAME?=neuromation/base
+CUSTOM_ENV_NAME?=image:course-fastai-nlp
 
+APT_COMMAND?=apt-get -qq
+PIP_COMMAND?=pip -q
 
 .PHONY: help
 help:
@@ -46,13 +48,13 @@ setup: ### Setup remote environment
 		--preset cpu-small \
 		--detach \
 		--volume $(PROJECT_PATH_STORAGE):$(PROJECT_PATH_ENV):ro \
-		--env PLATFORMAPI_SERVICE_HOST="nop" \
+		--env PLATFORMAPI_SERVICE_HOST="." \
 		$(BASE_ENV_NAME) \
 		'sleep 1h'
 	neuro cp $(REQUIREMENTS_APT) $(REQUIREMENTS_APT_STORAGE)
 	neuro cp $(REQUIREMENTS_PIP) $(REQUIREMENTS_PIP_STORAGE)
-	neuro exec $(SETUP_NAME) "bash -c 'apt-get update && cat $(REQUIREMENTS_APT_ENV) | xargs -I % apt-get install -y --no-install-recommends % && apt-get clean && apt-get autoremove && rm -rf /var/lib/apt/lists/*'"
-	neuro exec $(SETUP_NAME) 'pip install -r $(REQUIREMENTS_PIP_ENV)'
+	neuro exec --no-key-check $(SETUP_NAME) "bash -c 'export DEBIAN_FRONTEND=noninteractive && $(APT_COMMAND) update && cat $(REQUIREMENTS_APT_ENV) | xargs -I % $(APT_COMMAND) install --no-install-recommends % && $(APT_COMMAND) clean && $(APT_COMMAND) autoremove && rm -rf /var/lib/apt/lists/*'"
+	neuro exec --no-key-check $(SETUP_NAME) "bash -c '$(PIP_COMMAND) install -r $(REQUIREMENTS_PIP_ENV) && echo installed pip requirements'"
 	neuro --network-timeout 300 job save $(SETUP_NAME) $(CUSTOM_ENV_NAME)
 	neuro kill $(SETUP_NAME)
 
@@ -119,7 +121,7 @@ jupyter: upload-notebooks ### Run jupyter job
 	neuro run \
 		--name $(JUPYTER_NAME) \
 		--preset gpu-small \
-		--http 8888 --no-http-auth --detach \
+		--http 8888 --detach \
 		--browse \
 		--volume $(DATA_PATH_STORAGE):$(DATA_PATH_ENV):ro \
 		--volume $(CODE_PATH_STORAGE):$(CODE_PATH_ENV):rw \
@@ -139,7 +141,7 @@ tensorboard:  ### Run tensorboard job
 		--name $(TENSORBOARD_NAME) \
 		--preset cpu-small \
 		--browse \
-		--http 6006 --no-http-auth --detach \
+		--http 6006 --detach \
 		--env PLATFORMAPI_SERVICE_HOST="nop" \
 		--volume $(RESULTS_PATH_STORAGE):$(RESULTS_PATH_ENV):ro \
 		$(CUSTOM_ENV_NAME) \
@@ -154,10 +156,11 @@ filebrowser:  ### Run filebrowser job
 	neuro run \
 		--name $(FILEBROWSER_NAME) \
 		--preset cpu-small \
-		--http 80 --no-http-auth --detach \
+		--http 80 --detach \
 		--browse \
 		--volume $(PROJECT_PATH_STORAGE):/srv:rw \
-		filebrowser/filebrowser
+		filebrowser/filebrowser \
+		'--noauth'
 
 .PHONY: kill-filebrowser
 kill-filebrowser:  ### Kill filebrowser job

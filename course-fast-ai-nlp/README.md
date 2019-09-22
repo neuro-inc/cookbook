@@ -24,7 +24,6 @@ Follow the instructions below to setup the environment and start Jupyter develop
 
 * Setup development environment `make setup`
 * Run Jupyter with GPU: `make jupyter`
-* TBD: Run Jupyter with CPU: `make jupyter-cpu`
 * Kill Jupyter: `make kill_jupyter`
 
 # Data

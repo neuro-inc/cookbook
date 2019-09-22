@@ -26,7 +26,7 @@ JUPYTER_NAME?=jupyter
 TENSORBOARD_NAME?=tensorboard
 FILEBROWSER_NAME?=filebrowser
 
-BASE_ENV_NAME?=neuromation/base-2
+BASE_ENV_NAME?=neuromation/base
 CUSTOM_ENV_NAME?=image:neuromation-course-fast-ai-v3
 
 
@@ -119,7 +119,7 @@ jupyter:  ### Run jupyter job
 	neuro run \
 		--name $(JUPYTER_NAME) \
 		--preset gpu-small \
-		--http 8888 --no-http-auth --detach \
+		--http 8888 --detach \
 		--browse \
 		--volume $(DATA_PATH_STORAGE):$(DATA_PATH_ENV):ro \
 		--volume $(CODE_PATH_STORAGE):$(CODE_PATH_ENV):rw \
@@ -139,7 +139,7 @@ tensorboard:  ### Run tensorboard job
 		--name $(TENSORBOARD_NAME) \
 		--preset cpu-small \
 		--browse \
-		--http 6006 --no-http-auth --detach \
+		--http 6006 --detach \
 		--volume $(RESULTS_PATH_STORAGE):$(RESULTS_PATH_ENV):ro \
 		--env PLATFORMAPI_SERVICE_HOST="." \
 		$(CUSTOM_ENV_NAME) \
@@ -154,11 +154,12 @@ filebrowser:  ### Run filebrowser job
 	neuro run \
 		--name $(FILEBROWSER_NAME) \
 		--preset cpu-small \
-		--http 80 --no-http-auth --detach \
+		--http 80 --detach \
 		--browse \
 		--volume $(PROJECT_PATH_STORAGE):/srv:rw \
 		--env PLATFORMAPI_SERVICE_HOST="." \
-		filebrowser/filebrowser
+		filebrowser/filebrowser \
+		'--noauth'
 
 .PHONY: kill-filebrowser
 kill-filebrowser:  ### Kill filebrowser job
