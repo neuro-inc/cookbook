@@ -11,4 +11,3 @@ This folder contains examples and best practices, written in Jupyter notebooks, 
 |[Sentence Similarity](sentence_similarity)|STS Benchmark|Representation: TF-IDF, Word Embeddings, Doc Embeddings<br>Metrics: Cosine Similarity, Word Mover's Distance<br> Models: BERT||
 |[Embeddings](embeddings)|Custom Embeddings Training|Word2Vec, fastText, GloVe||
 |[Model Explainability](model_explainability)|DNN Layer Explanation|DUUDNM (Guan et al.)|
-
