@@ -131,14 +131,14 @@ connect-training:  ### Execute shell to the training job
 	neuro exec --no-key-check $(TRAINING_NAME) bash
 
 .PHONY: jupyter
-jupyter: upload-code upload-notebooks ### Run jupyter job
+jupyter: upload-code upload-notebooks upload-data ### Run jupyter job
 	neuro run \
 		--name $(JUPYTER_NAME) \
 		--preset $(TRAINING_MACHINE_TYPE) \
 		--http 8888 --detach \
 		$(HTTP_AUTH) \
 		--browse \
-		--volume $(DATA_PATH_STORAGE):$(DATA_PATH_ENV):ro \
+		--volume $(DATA_PATH_STORAGE):$(DATA_PATH_ENV):rw \
 		--volume $(CODE_PATH_STORAGE):$(CODE_PATH_ENV):rw \
 		--volume $(PROJECT_PATH_STORAGE)/pytorch_detection:$(PROJECT_PATH_ENV)/pytorch_detection:ro \
 		--volume $(NOTEBOOKS_PATH_STORAGE):$(NOTEBOOKS_PATH_ENV):rw \
