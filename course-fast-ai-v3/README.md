@@ -1,4 +1,4 @@
-# fast.ai NLP Course
+# fast.ai: Practical Deep Learning for Coders, v3
 
 Interactive development environment to get you up and running with Practical Deep Learning for Coders, v3](https://course.fast.ai/) [notebooks](https://github.com/fastai/course-v3)
 
