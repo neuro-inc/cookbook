@@ -28,7 +28,7 @@ JUPYTER_NAME?=jupyter-goods-on-shelves-detection
 TENSORBOARD_NAME?=tensorboard-goods-on-shelves-detection
 FILEBROWSER_NAME?=filebrowser-goods-on-shelves-detection
 
-BASE_ENV_NAME?=neuromation/base-detection
+BASE_ENV_NAME?=neuromation/base-object-detection
 CUSTOM_ENV_NAME?=image:neuromation-goods-on-shelves-detection
 TRAINING_MACHINE_TYPE?=gpu-small
 
