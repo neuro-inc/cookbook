@@ -36,10 +36,7 @@ From local machine run `make filebrowser` and open job's URL from your mobile de
 
 From local machine run `make upload_data`. This will push local files stored in `./data` into `storage:detection-kit/data` mounted to your development environment's `/project/data`.
 
-
-
-
-# README-2
+## Uploading Dataset and Checkpoints
 
 * Download [data](https://drive.google.com/a/neuromation.io/file/d/1WWQ33zM23udAPnTO6_Y-6w_P_Dgq7x0N/view?usp=sharing) [338 MB]
 and unzip it into folder `data`. Please, check, that files structures
