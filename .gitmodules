@@ -4,3 +4,15 @@
 [submodule "course-fast-ai-v3/course-v3"]
 	path = course-fast-ai-v3/course-v3
 	url = https://github.com/fastai/course-v3.git
+[submodule "ml-recipe-object-detection"]
+	path = ml-recipe-object-detection
+	url = https://github.com/neuromation/ml-recipe-object-detection
+[submodule "ml-recipe-nlp"]
+	path = ml-recipe-nlp
+	url = https://github.com/neuromation/ml-recipe-nlp
+[submodule "ml-recipe-course-fast-ai-v3"]
+	path = ml-recipe-course-fast-ai-v3
+	url = https://github.com/neuromation/ml-recipe-course-fast-ai-v3
+[submodule "ml-recipe-course-fast-ai-nlp"]
+	path = ml-recipe-course-fast-ai-nlp
+	url = https://github.com/neuromation/ml-recipe-course-fast-ai-nlp
