@@ -1,1 +1,0 @@
-`Torchvision` doesn't provide full functionallity for object detection out of box now (13.09.2019). So the only one way to work with it - to copy files into repository folder following authors advices in [tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html).

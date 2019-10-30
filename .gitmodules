@@ -1,6 +1,0 @@
-[submodule "course-fast-ai-nlp/course-nlp"]
-	path = course-fast-ai-nlp/course-nlp
-	url = https://github.com/fastai/course-nlp.git
-[submodule "course-fast-ai-v3/course-v3"]
-	path = course-fast-ai-v3/course-v3
-	url = https://github.com/fastai/course-v3.git
