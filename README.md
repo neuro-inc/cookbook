@@ -21,6 +21,8 @@ You have two options of how you might wish to use our recipes. You can sign up a
 
 * [Language Recipes](https://github.com/neuromation/ml-recipe-nlp). Based on [Microsoft's NLP Notebooks](https://github.com/microsoft/nlp), these let you start building Natural Language Processing systems for various scenarios, such as: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity, and more.
 
+* [Hierarchical Attention](https://github.com/neuromation/ml-recipe-hier-attention). Based on highly cited paper [Hierarchical Attention Networks for Document Classification](https://arxiv.org/abs/1608.07775) (Z. Yang et al.), published in 2017, this recipe demonstrates how to apply this two-step architecture to sentiment classification.
+
 ### Music generation
 
 * [MIDI Generator](https://github.com/neuromation/ml-recipe-midi-generator). This recipe demonstrates how to generate MIDI files from scratch and continue existing MIDI files. Warning: the recipe contains very catchy notebook. Do not forget to watch your surroundings!
