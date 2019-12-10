@@ -21,6 +21,8 @@ You have two options of how you might wish to use our recipes. You can sign up a
 
 * [Language Recipes](https://github.com/neuromation/ml-recipe-nlp). Based on [Microsoft's NLP Notebooks](https://github.com/microsoft/nlp), these let you start building Natural Language Processing systems for various scenarios, such as: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity, and more.
 
+* [Hierarchical Attention](https://github.com/neuromation/ml-recipe-hier-attention). Based on highly cited paper [Hierarchical Attention Networks for Document Classification](https://arxiv.org/abs/1608.07775) (Z. Yang et al.), published in 2017, this recipe demonstrates how to apply this two-step architecture to sentiment classification.
+
 ### Learning
 
 * [Practical Deep Learning for Coders, v3](https://github.com/neuromation/ml-recipe-course-fast-ai-v3). Brought to you by [fast.ai](https://fast.ai), this course aims to make deep learning more comfortable to use, thereby getting more people from all backgrounds involved.
