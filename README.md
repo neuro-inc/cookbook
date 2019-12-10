@@ -21,6 +21,10 @@ You have two options of how you might wish to use our recipes. You can sign up a
 
 * [Language Recipes](https://github.com/neuromation/ml-recipe-nlp). Based on [Microsoft's NLP Notebooks](https://github.com/microsoft/nlp), these let you start building Natural Language Processing systems for various scenarios, such as: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity, and more.
 
+### Music generation
+
+* [MIDI Generator](https://github.com/neuromation/ml-recipe-midi-generator). This recipe demonstrates how to generate MIDI files from scratch and continue existing MIDI files. Warning: the recipe contains very catchy notebook. Do not forget to watch your surroundings!
+
 ### Learning
 
 * [Practical Deep Learning for Coders, v3](https://github.com/neuromation/ml-recipe-course-fast-ai-v3). Brought to you by [fast.ai](https://fast.ai), this course aims to make deep learning more comfortable to use, thereby getting more people from all backgrounds involved.
