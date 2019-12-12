@@ -17,6 +17,8 @@ You have two options of how you might wish to use our recipes. You can sign up a
 
 * [Object detection](https://github.com/neuromation/ml-recipe-object-detection). An end to end object detection pipeline for objects represented in the [Common Objects in Context (COCO)](http://cocodataset.org) dataset that allows you to evaluate performance on real life images and to add new object classes.
 
+* [Pediatric Bone Age Assessment](https://github.com/neuromation/ml-recipe-bone-age). This recipe demonstrates the estimation of the age of the child from the X-ray image of the left hand from the wrist to the fingertips. It is based on an approach described in _"Paediatric Bone Age Assessment Using Deep Convolutional Neural Networks" by V. Iglovikov, A. Rakhlin, A. Kalinin and A. Shvets_, [1](https://link.springer.com/chapter/10.1007%2F978-3-030-00889-5_34), [2](https://www.biorxiv.org/content/biorxiv/early/2018/06/20/234120.full.pdf).
+
 ### Language
 
 * [Language Recipes](https://github.com/neuromation/ml-recipe-nlp). Based on [Microsoft's NLP Notebooks](https://github.com/microsoft/nlp), these let you start building Natural Language Processing systems for various scenarios, such as: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity, and more.
