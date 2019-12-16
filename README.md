@@ -11,43 +11,41 @@ Using ML Recipes, you can:
 
 You have two options of how you might wish to use our recipes. You can sign up as [free tier user](https://neu.ro/) and experiment with the recipes within our managed installation of the platform. You can also install Neuro into your AWS, GCP, or Azure cloud account or on-perm GPU rack and use the recipes there.
 
-## What's Inside?
+# What's Inside?
 
-### Vision
+## Vision
 
-* [Object detection](https://github.com/neuromation/ml-recipe-object-detection). An end to end object detection pipeline for objects represented in the [Common Objects in Context (COCO)](http://cocodataset.org) dataset that allows you to evaluate performance on real life images and to add new object classes.
+[Object detection](https://github.com/neuromation/ml-recipe-object-detection). An end to end object detection pipeline for objects represented in the [Common Objects in Context (COCO)](http://cocodataset.org) dataset that allows you to evaluate performance on real life images and to add new object classes.
 
-* [Pediatric Bone Age Assessment](https://github.com/neuromation/ml-recipe-bone-age). This recipe demonstrates the estimation of the age of the child from the X-ray image of the left hand from the wrist to the fingertips. It is based on an approach described in _"Paediatric Bone Age Assessment Using Deep Convolutional Neural Networks" by V. Iglovikov, A. Rakhlin, A. Kalinin and A. Shvets_, [1](https://link.springer.com/chapter/10.1007%2F978-3-030-00889-5_34), [2](https://www.biorxiv.org/content/biorxiv/early/2018/06/20/234120.full.pdf).
+[Pediatric Bone Age Assessment](https://github.com/neuromation/ml-recipe-bone-age). This recipe demonstrates the estimation of the age of the child from the X-ray image of the left hand from the wrist to the fingertips. It is based on an approach described in _"Paediatric Bone Age Assessment Using Deep Convolutional Neural Networks" by V. Iglovikov, A. Rakhlin, A. Kalinin and A. Shvets_, [1](https://link.springer.com/chapter/10.1007%2F978-3-030-00889-5_34), [2](https://www.biorxiv.org/content/biorxiv/early/2018/06/20/234120.full.pdf).
 
-### Language
+## Language
 
-* [Language Recipes](https://github.com/neuromation/ml-recipe-nlp). Based on [Microsoft's NLP Notebooks](https://github.com/microsoft/nlp), these let you start building Natural Language Processing systems for various scenarios, such as: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity, and more.
+[Language Recipes](https://github.com/neuromation/ml-recipe-nlp). Based on [Microsoft's NLP Notebooks](https://github.com/microsoft/nlp), these let you start building Natural Language Processing systems for various scenarios, such as: Topic Classification, Named Entity Recognition, Question Answering, Sentence Similarity, and more.
 
-* [Hierarchical Attention](https://github.com/neuromation/ml-recipe-hier-attention). Based on highly cited paper [Hierarchical Attention Networks for Document Classification](https://arxiv.org/abs/1608.07775) (Z. Yang et al.), published in 2017, this recipe demonstrates how to apply this two-step architecture to sentiment classification.
+[Hierarchical Attention](https://github.com/neuromation/ml-recipe-hier-attention). Based on highly cited paper [Hierarchical Attention Networks for Document Classification](https://arxiv.org/abs/1608.07775) (Z. Yang et al.), published in 2017, this recipe demonstrates how to apply this two-step architecture to sentiment classification.
 
-### Music Generation
+[MIDI Generator](https://github.com/neuromation/ml-recipe-midi-generator). This recipe demonstrates how to generate MIDI files from scratch and continue existing MIDI files. Warning: the recipe contains very catchy notebook. Don't forget to watch your surroundings!
 
-* [MIDI Generator](https://github.com/neuromation/ml-recipe-midi-generator). This recipe demonstrates how to generate MIDI files from scratch and continue existing MIDI files. Warning: the recipe contains very catchy notebook. Do not forget to watch your surroundings!
+## Reinforcement Learning
 
-### Reinforcement Learning
+[Deep Q-Learning](https://github.com/neuromation/ml-recipe-mountain-car). This recipe shows a rather simplistic approach to reinforcement learning (DQN) in one of the traditional environment: [Mountain Car](https://gym.openai.com/envs/MountainCar-v0/). It is an excellent starting point to dive into Deep Reinforcement Learning.
 
-* [Deep Q-Learning](https://github.com/neuromation/ml-recipe-mountain-car). This recipe shows a rather simplistic approach to reinforcement learning (DQN) in one of the traditional environment: [Mountain Car](https://gym.openai.com/envs/MountainCar-v0/). It is an excellent starting point to dive into Deep Reinforcement Learning.
+## Learning
 
-### Learning
+[Practical Deep Learning for Coders, v3](https://github.com/neuromation/ml-recipe-course-fast-ai-v3). Brought to you by [fast.ai](https://fast.ai), this course aims to make deep learning more comfortable to use, thereby getting more people from all backgrounds involved.
 
-* [Practical Deep Learning for Coders, v3](https://github.com/neuromation/ml-recipe-course-fast-ai-v3). Brought to you by [fast.ai](https://fast.ai), this course aims to make deep learning more comfortable to use, thereby getting more people from all backgrounds involved.
+[A Code-First Introduction to Natural Language Processing](https://github.com/neuromation/ml-recipe-course-fast-ai-nlp) is another great [course](https://www.fast.ai/2019/07/08/fastai-nlp/) from fast.ai. It covers a lot of ground, including transfer learning for NLP, tips on working with languages other than English, attention and the transformer, text generation algorithms, and issues of bias.
 
-* [A Code-First Introduction to Natural Language Processing](https://github.com/neuromation/ml-recipe-course-fast-ai-nlp) is another great [course](https://www.fast.ai/2019/07/08/fastai-nlp/) from fast.ai. It covers a lot of ground, including transfer learning for NLP, tips on working with languages other than English, attention and the transformer, text generation algorithms, and issues of bias.
-
-## Prerequisites
+# Prerequisites
 
 * Familiarity with working with data in Python.
 * Familiarity with machine learning concepts (such as training and test sets).
 * Some experience with PyTorch and neural networks is helpful.
 
-## Getting Started
+# Getting Started
 
-### Install the Neuro CLI
+## Install the Neuro CLI
 
 To work with ML Recipes, you need to install the Neuro Platform CLI.
 
@@ -60,6 +58,6 @@ Paste the above in a macOS, Windows, or Linux terminal prompt. This command auto
 
 The Neuro Platform CLI requires Python 3.7 to be installed. We suggest installing Anaconda Python 3.7 Distribution. On some distributions, you might have to run `pip3 install -U neuromation`.
 
-### Run ML Recipe
+## Run ML Recipe
 
 Choose an ML Recipe from the list above, clone the corresponding repository and follow the instructions from that recipe's README.
